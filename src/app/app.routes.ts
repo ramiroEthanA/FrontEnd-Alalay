@@ -19,6 +19,10 @@ export const routes: Routes = [
         loadChildren: () => import('./views/dashboard/routes').then((m) => m.routes)
       },
       {
+        path: 'ninos',
+        loadChildren: () => import('./views/ninos/routes').then((m) => m.routes)
+      },
+      {
         path: 'theme',
         loadChildren: () => import('./views/theme/routes').then((m) => m.routes)
       },
@@ -86,3 +90,4 @@ export const routes: Routes = [
   },
   { path: '**', redirectTo: 'dashboard' }
 ];
+

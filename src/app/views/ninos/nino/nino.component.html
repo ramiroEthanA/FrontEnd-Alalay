@@ -1,0 +1,132 @@
+<c-row ngPreserveWhitespaces>
+    <c-col xs="12">
+
+        <c-card class="mb-4">
+            <c-card-header>
+              <strong>Formulario de Niños</strong>
+            </c-card-header>
+            <c-card-body>
+              
+                <form cForm>
+                  <div class="mb-3">
+                    <label cLabel for="nombre">Nombre</label>
+                    <input cFormControl
+                           id="nombre"
+                           placeholder="ingrese nombre"
+                           type="text"
+                    />
+                  </div>
+
+                  <div class="mb-3">
+                    <label cLabel for="apellido">Apellido</label>
+                    <input cFormControl
+                           id="apellido"
+                           placeholder="ingrese apellido"
+                           type="text"
+                    />
+                  </div>
+
+                  <div class="mb-3">
+                    <label cLabel for="sexo">Sexo</label>
+                    <input cFormControl
+                           id="sexo"
+                           placeholder="ingrese sexo"
+                           type="text"
+                    />
+                  </div>
+
+                  <div class="mb-3">
+                    <label cLabel for="fecha_nacimiento">fecha nacimiento</label>
+                    <input cFormControl
+                           id="fecha_nacimiento"
+                           placeholder="ingrese fecha_nacimiento"
+                           type="text"
+                    />
+                  </div>
+
+                  <div class="mb-3">
+                    <label cLabel for="celular">Celular</label>
+                    <input cFormControl
+                           id="celular"
+                           placeholder="ingrese celular"
+                           type="text"
+                    />
+                  </div>
+
+                  <div class="mb-3">
+                    <label cLabel for="direccion">Direccion</label>
+                    <input cFormControl
+                           id="direccion"
+                           placeholder="ingrese direccion"
+                           type="text"
+                    />
+                  </div>
+
+                  <div class="mb-3">
+                    <label cLabel for="email">Email</label>
+                    <input cFormControl
+                           id="email"
+                           placeholder="ingrese email"
+                           type="text"
+                    />
+                  </div>
+
+                  <div class="mb-3">
+                    <label cLabel for="cod_etapa">cod_etapa</label>
+                    <input cFormControl
+                           id="cod_etapa"
+                           placeholder="ingrese cod_etapa"
+                           type="text"
+                    />
+                  </div>
+
+                  <div class="mb-3">
+                    <label cLabel for="nombreusuario">Usuario</label>
+                    <select aria-label="Seleccione usuario" cSelect>
+                        <option>Seleccione un usuario del menu</option>
+                        <option value="1">carlos</option>
+                        <option value="2">Juan</option>
+                        <option value="3">Pedro</option>
+                      </select>
+                  </div>
+                
+                  <button cButton class="me-1" color="primary" type="submit">
+                    Guardar
+                  </button>
+
+                </form>
+              
+            </c-card-body>
+          </c-card>
+          <c-col xs="12">
+            <table cTable>
+                <thead>
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">Nombre</th>
+                  <th scope="col">usuario</th>
+                  <th scope="col">Acciones</th>
+
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                  <th scope="row">1</th>
+                  <td>Mark</td>
+                  <td>Otto</td>
+                  <td>&#64;mdo</td>
+
+                  <td>
+                    <button cButton color="warning" variant="outline" >Editar</button>
+                    <button  cButton color="danger" variant="outline">Eliminar</button>
+                  </td>
+                  
+
+                </tr>
+           
+                </tbody>
+              </table>
+          </c-col>
+
+    </c-col>
+</c-row>    

@@ -10,6 +10,35 @@ export const navItems: INavData[] = [
       text: 'NEW'
     }
   },
+
+///---------------------RECETA INICIO
+
+{
+  title: true,
+  name: 'PRINCIPAL ALALAY'
+},
+{
+  name: 'Niño',
+  url: '/nino',
+    iconComponent: { name: 'cil-puzzle' },
+    children: [
+      {
+        name: 'Nino',
+        url: '/ninos/nino',
+        icon: 'nav-icon-bullet'
+      },
+      {
+        name: 'Reportes',
+        url: '/ninos/reportes',
+        icon: 'nav-icon-bullet'
+      },
+    ]
+},
+
+///-------------------RECETA FINAL
+
+
+
   {
     title: true,
     name: 'Theme'
